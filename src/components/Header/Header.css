@@ -1,0 +1,25 @@
+.header {
+    max-width: 100%;
+    background-color: #FEFBF1;
+    min-height: 4rem;
+    border-bottom: 1px #703412 solid;
+    align-content: center;
+}
+
+
+.nav{
+    text-align: center;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    color: #703412;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 21px;
+    letter-spacing: 0%;
+    gap: 2em;
+}

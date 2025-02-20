@@ -1,0 +1,54 @@
+.gallery{
+    background-color: #FEFBF1;
+    width: 100%;
+    height: 152vh;
+}
+
+.heading-gallery{
+    width: 35.68em;
+    
+
+}
+
+.promo-h2 {
+    color: #703412;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41.6px;
+    letter-spacing: 0%;
+}
+
+.gallery-content {
+    display: grid;
+    margin-top: 14em;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 60px; /* Отступ между карточками */
+    justify-content: center;
+    padding: 20px;
+    color: #703412;
+}
+
+.gallery-card {
+    width: 312px;
+    height: 400px; /* Карточки адаптируются под колонку */
+    background-color: transparent;
+    border: none;
+    color: #703412;
+    overflow: hidden;
+}
+
+.gallery-card img {
+    width: 312px;
+    max-height: 310px; /* Ограничиваем максимальную высоту */
+    object-fit: cover; /* Вписывает изображение без обрезки */
+}
+
+
+.gallery-card .ant-card-meta-title {
+    color: #703412; /* Цвет заголовка (например, зеленый) */
+}
+
+.gallery-card .ant-card-meta-description {
+    color: rgba(112, 52, 18, 0.72); /* Цвет описания (например, серый) */
+}
