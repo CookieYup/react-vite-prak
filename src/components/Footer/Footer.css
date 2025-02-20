@@ -81,3 +81,11 @@
     letter-spacing: 0%;
 
 }
+
+@media (max-width: 480px) {
+    
+    .footer-bottom {
+        margin-left: 3rem;
+    
+    }
+}

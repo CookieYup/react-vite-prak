@@ -34,3 +34,54 @@
     color: #703412;
 
 }
+
+/* ===== Адаптивность ===== */
+@media (max-width: 1024px) {
+    .promo-text {
+        max-width: 90%;
+        padding-top: 5rem;
+    }
+
+    .lg-text {
+        font-size: 3.5em;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-text {
+        padding-top: 3rem;
+    }
+
+    .sm-text {
+        font-size: 0.6em;
+        line-height: 1.8em;
+    }
+
+    .lg-text {
+        font-size: 2.5em;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo {
+        padding: 1rem;
+        height: 31em;
+    }
+
+    .promo-text {
+        padding-top: 2rem;
+    }
+
+    .sm-text {
+        font-size: 0.55em;
+        line-height: 1.6em;
+    }
+
+    .lg-text {
+        margin-top: 5rem;
+        font-size: 2em;
+        line-height: 1.2;
+    }
+}
