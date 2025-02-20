@@ -1,20 +1,18 @@
-import React from "react";
-import Container from "../Container/Container";
+
+
 import "./Promo.css"
 
-const Promo: React.FC = () => {
+export default function Promo (){
   return (
     <section className="promo">
-      <Container>
+      <div className="container">
         <div className="promo-text">
-          {/* Маленький текст */}
           <p
             className="sm-text"
           >
             BUSINESS thoughts 💭
           </p>
 
-          {/* Большой текст */}
           <h1
             className="lg-text"
           >
@@ -23,9 +21,9 @@ const Promo: React.FC = () => {
             selling your brand.
           </h1>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
 
-export default Promo;
+

@@ -36,31 +36,43 @@
 }
 
 /* ===== Адаптивность ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1056px) {
     .promo-text {
         max-width: 90%;
         padding-top: 5rem;
     }
 
     .lg-text {
-        font-size: 3.5em;
-        line-height: 1.2;
+        margin-top:  67px;
+        width: 419px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 0%;
+
     }
 }
 
 @media (max-width: 768px) {
     .promo-text {
         padding-top: 3rem;
+        width: 25em;
     }
 
     .sm-text {
-        font-size: 0.6em;
-        line-height: 1.8em;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 0.8em;
+        line-height: 44px;
+        letter-spacing: 1.6px;
+
     }
 
     .lg-text {
+        margin-top: 5rem;
+        font-family: 'Roboto';
+        font-weight: 700;
         font-size: 2.5em;
-        line-height: 1.2;
     }
 }
 
@@ -80,8 +92,19 @@
     }
 
     .lg-text {
+        width: 20rem;
         margin-top: 5rem;
         font-size: 2em;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .lg-text {
+        width: 20rem;
+        margin-top: 5rem;
+        font-size: 1.5em;
         line-height: 1.2;
     }
 }

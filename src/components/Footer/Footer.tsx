@@ -1,11 +1,10 @@
-import React from "react";
-import "./Footer.css";
-import Container from "../Container/Container";
 
-const Footer: React.FC = () => {
+import "./Footer.css";
+
+export default function Footer () {
   return (
     <footer className="footer">
-      <Container>
+      <div className="container">
         <div className="footer-heading">
           <h1 className="ft-h1">CONTACT</h1>
           <p className="ft-txt1">We're focused on building brands and a better future.</p>
@@ -43,13 +42,14 @@ const Footer: React.FC = () => {
             <p>acquisitions@patternbrands.com</p>
           </div>
         </div>
-        
-      </Container>
-      <div className="footer-bottom">
+        <hr className="gray-line" />
+        <div className="footer-bottom">
         <p className="footer-bottom-text">© 2025 Pattern Brands</p>
       </div>
+      </div>
+      
     </footer>
   );
 };
 
-export default Footer;
+

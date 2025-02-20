@@ -1,11 +1,10 @@
-import React from "react";
-import Container from "../Container/Container";
+
 import "./Header.css"
 
-const Header: React.FC = () => {
+export default function Header () {
   return (
     <header className="header">
-      <Container>
+      <div className="container">
         <div className="nav">
           <ul className="nav-links">
             <li><a href="#" className="">Blog</a></li>
@@ -13,9 +12,9 @@ const Header: React.FC = () => {
             <li><a href="#" className="">Join Us</a></li>
           </ul>
         </div>
-      </Container>
+      </div>
     </header>
   );
 };
 
-export default Header;
+

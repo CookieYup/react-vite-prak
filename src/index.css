@@ -1,3 +1,32 @@
+.container {
+    position: relative;
+    align-items: center;
+    max-width: 1056px;
+    width: 100%; 
+    padding: 0 20px;
+    margin: 0 auto;
+}
 
-@import "tailwindcss";
 
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%; 
+        padding: 0 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 0 58px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 0 28px; 
+    }
+}

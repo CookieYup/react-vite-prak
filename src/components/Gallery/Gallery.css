@@ -21,35 +21,30 @@
 .gallery-content {
     display: grid;
     margin-top: 5em;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-    gap: 60px; /* Отступ между карточками */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 60px; 
     justify-content: center;
     padding: 20px;
-    color: #703412;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 28.8px;
 }
 
 .gallery-card {
     width: 312px;
-    height: 400px; /* Карточки адаптируются под колонку */
+    height: 450px;
     background-color: transparent;
     border: none;
-    color: #703412;
     overflow: hidden;
 }
 
 .gallery-card img {
     width: 312px;
-    max-height: 310px; /* Ограничиваем максимальную высоту */
-    object-fit: cover; /* Вписывает изображение без обрезки */
+    max-height: 310px; 
+    object-fit: cover;
     border-radius: 10px;
 }
 
-.gallery-card .ant-card-meta-description{
-
+.gallery-card .card-description{
+    color: rgba(112, 52, 18, 0.72); 
+    margin-top: 1rem;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 12px;
@@ -58,8 +53,9 @@
 
 }
 
-.gallery-card .ant-card-meta-title{
-    
+.gallery-card .card-title{
+    margin-top: 1.5rem;
+    color: #703412; 
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 24px;
@@ -69,51 +65,132 @@
 }
 
 
-.gallery-card .ant-card-meta-title {
-    color: #703412; /* Цвет заголовка (например, зеленый) */
-}
 
-.gallery-card .ant-card-meta-description {
-    color: rgba(112, 52, 18, 0.72); /* Цвет описания (например, серый) */
-}
+
 
 /* ===== Адаптивность ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1056px) {
     .gallery-content {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
-        gap: 30px;
+        margin-top: 4em;
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-card {
+        width: 90%; 
+        max-width: 600px;
+        height: auto; 
+    }
+
+    .gallery-card img {
+        width: 100%;
+        max-height: 312px;
+        border-radius: 12px;
+    }
+
+    .gallery-card .card-description{
+        margin-top: 1.5rem;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1.6px;
+
+    
+    }
+    .gallery-card .card-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+        letter-spacing: 0%;
+
+        margin-top: 1rem;
+    
+    }
+
+    .promo-h2 {
+        width: 100%;
+        max-width: 32em;
+        font-size: 20px;
+        line-height: 32px;
     }
 }
 
 @media (max-width: 768px) {
     .gallery-content {
         margin-top: 4em;
-        grid-template-columns: repeat(1, 1fr); /* 1 колонка на телефонах */
-        gap: 20px;
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .gallery-card {
-        max-width: 100%;
+        width: 90%; 
+        max-width: 600px;
+        height: auto; 
+    }
+
+    .gallery-card img {
+        width: 100%;
+        max-height: 400px;
+        border-radius: 12px;
     }
 
     .promo-h2 {
-        font-size: 28px;
-        line-height: 36px;
+        width: 100%;
+        max-width: 32em;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .gallery-card .card-description{
+        margin-top: 0.5rem;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1.6px;
+
+    
+    }
+    .gallery-card .card-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+        letter-spacing: 0%;
+
+        margin-top: 1rem;
+    
+    }
+}
+
+
+@media (max-width: 630px) and (min-width: 480px) {
+    .heading-gallery {
+        width:  25em;
+    }
+    .promo-h2 {
+        font-size: 22px;
+        line-height: 30px;
     }
 }
 
 @media (max-width: 480px) {
-    
-    .heading-gallery{
+    .heading-gallery {
+
         width: 18.4375em;
     }
+
     .promo-h2 {
-        
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .gallery {
-        padding: 3rem 1rem;
+        padding: 3rem 0;
     }
 }
+
+
