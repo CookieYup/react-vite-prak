@@ -96,7 +96,7 @@
     transform: translateX(-5vw);
     left: -100%;
 }
-
+/* ===== Адаптивность ===== */
 @media (max-width: 480px) {
     .footer {
         padding-top: 1em;

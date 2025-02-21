@@ -13,7 +13,7 @@ export default function Gallery() {
         <section className="gallery-content">
           {cardData.map((card, index) => (
             <div key={index} className="gallery-card">
-              <img src={card.image} alt={card.title} className="card-image" />
+              <img src={card.image} alt={card.alt} className="card-image" />
               <div className="card-text">
                 <h3 className="card-title">{card.title}</h3>
                 <p className="card-description">{card.description}</p>

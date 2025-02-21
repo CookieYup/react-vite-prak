@@ -57,6 +57,7 @@
     .promo-text {
         padding-top: 3rem;
         width: 25em;
+
     }
 
     .sm-text {
@@ -78,7 +79,6 @@
 
 @media (max-width: 480px) {
     .promo {
-        padding: 1rem;
         height: 31em;
     }
 
@@ -102,9 +102,9 @@
 @media (max-width: 360px) {
 
     .lg-text {
-        width: 20rem;
+        width: 15rem;
         margin-top: 5rem;
-        font-size: 1.5em;
+        font-size: 1.7em;
         line-height: 1.2;
     }
 }
