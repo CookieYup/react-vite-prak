@@ -77,6 +77,13 @@
 
 }
 
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 20px 0;
+    text-align: center;
+}
+
+
 .footer-bottom-text{
     font-family: 'Roboto';
     margin-left: 5em;
@@ -87,15 +94,7 @@
 
 }
 
-.gray-line{
-    position: absolute;
-    left: 0;
-    margin-top: 2rem;
-    width: 250vw;
-    border: 1px rgba(255, 255, 255, 0.16) solid;
-    transform: translateX(-5vw);
-    left: -100%;
-}
+
 /* ===== Адаптивность ===== */
 @media (max-width: 480px) {
     .footer {

@@ -42,10 +42,9 @@ export default function Footer () {
             <p>acquisitions@patternbrands.com</p>
           </div>
         </div>
-        <hr className="gray-line" />
-        <div className="footer-bottom">
-        <p className="footer-bottom-text">© 2025 Pattern Brands</p>
       </div>
+      <div className="copyright">
+        <p>© 2025 Pattern Brands</p>
       </div>
       
     </footer>

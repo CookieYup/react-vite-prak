@@ -7,9 +7,9 @@ export default function Header () {
       <div className="container">
         <div className="nav">
           <ul className="nav-links">
-            <li><a href="#" className="">Blog</a></li>
-            <li><a href="#" className="">Press</a></li>
-            <li><a href="#" className="">Join Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Join Us</a></li>
           </ul>
         </div>
       </div>
